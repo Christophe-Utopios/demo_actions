@@ -36,6 +36,7 @@ jobs:
           restore-keys: ${{ runner.os }}-pip-
 
       - name: Build application
+        shell: bash
         run: |
           python -m venv .venv
           source .venv/bin/activate
